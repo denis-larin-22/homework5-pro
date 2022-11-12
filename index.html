@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="main__h1">Homework 5 (version 1)</h1>
+        <a href="./second_version.html" class="main__link">link to the second version</a>
+    </main>
+    <script>
+        var userString = prompt('Введите строку:');
+        var userNumber = +prompt('Введите числом длинну строки:');
+        var userSign = prompt('Введите жeлаемый символ для заполнения:');
+        var userSide = confirm('Символы добавлять с левой стороны?');
+
+        function padString(string, number, sign, side) {
+            var strLength = string.length;
+            if (number > strLength) {
+
+                for (i = 0; i <= (number - strLength); i++) {
+
+                    if (side == true) {
+                        string = sign + string;
+                    } else {
+                        string += sign;
+                    }
+                }
+                alert(string);
+            } else {
+                alert(string);
+            }
+        }
+
+        padString(userString, userNumber, userSign, userSide);
+    </script>
+</body>
+
+</html>
