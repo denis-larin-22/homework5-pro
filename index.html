@@ -11,8 +11,7 @@
 
 <body>
     <main class="main">
-        <h1 class="main__h1">Homework 5 (version 1)</h1>
-        <a href="./second_version.html" class="main__link">link to the second version</a>
+        <h1 class="main__h1">Homework 5 </h1>
     </main>
     <script>
         var userString = prompt('Введите строку:');
@@ -32,13 +31,14 @@
                         string += sign;
                     }
                 }
-                alert(string);
+                return (string);
             } else {
-                alert(string);
+                return (string);
             }
         }
 
-        padString(userString, userNumber, userSign, userSide);
+        let result = padString(userString, userNumber, userSign, userSide);
+        console.log(result);
     </script>
 </body>
 
