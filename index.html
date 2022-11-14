@@ -19,9 +19,9 @@
         var userSign = prompt('Введите жeлаемый символ для заполнения:');
         var userSide = confirm('Символы добавлять с левой стороны?');
 
-        function padString(string, number, sign, side) {
+        function padString(string, number, sign = '', side) {
             var strLength = string.length;
-            if (number > strLength) {
+            if (number >= strLength) {
 
                 for (i = 1; i <= (number - strLength); i++) {
 
